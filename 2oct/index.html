@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      async function display()
+        {
+            
+
+            let mydata=await fetch("raj.txt");
+            let data=await mydata.text();
+            document.getElementById("demo").innerHTML=data;
+        }
+
+       async function display1()
+        {
+            let file1="raj.txt";
+            fetch(file1)
+            .then(x=> x.text())
+            .then(y=>document.getElementById("demo").innerHTML=y);
+        }
+    </script>
+</head>
+<body bgcolor="yellow">
+    <!--Fetch on base -->
+    <button onclick="display()">Click here</button>
+    <button onclick="display1()">Click here</button>
+    <hr size="4" color="red">
+    <div id="demo">Welcome!!!</div>
+</body>
+</html>

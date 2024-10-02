@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">hello</h1>
+    <h1 id="demo2">sanju</h1>
+    <h1 id="demo3">sanju</h1>
+    <h1 id="demo4">sanju</h1>
+    <h1 id="demo5">sanju</h1>
+
+    <script>
+        
+        function myDate()
+        {
+            const d=new Date();
+            document.getElementById("demo").innerHTML=d;
+            const t=d.getDate();
+            document.getElementById('demo2').innerHTML=t;
+            const h=d.getHours();
+            document.getElementById('demo3').innerHTML=h;
+            const m=d.getMinutes();
+            document.getElementById('demo4').innerHTML=m;
+            const s=d.getSeconds();
+            document.getElementById('demo5').innerHTML=s;
+            
+        }
+        
+        setInterval(myDate, 1000);
+    </script>
+</body>
+</html>

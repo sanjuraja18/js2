@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1" method="post" onsubmit="return formfill()">
+        Enter Your name : <input type="text" name="nm" placeholder="name">
+        <br><br>
+        Enter Your city : <input type="text" name="ct" placeholder="city">
+        <br><br>
+        Enter your roll no : <input type="number" name="roll" placeholder="rollno">
+        <br><br>
+        Enter your number : <input type="number" name="pn" placeholder="number">
+        <br><br>
+        Enter password : <input type="password" name="pass1" placeholder="password">
+        <br><br>
+        Enter re-password : <input type="password" name="pass2" placeholder="re-password">
+        <br><br>
+        Enter fees : <input type="number" name="fs" placeholder="fees">
+        <br><br>
+        <button>Summit</button>
+
+
+        <script>
+            function formfill()
+            {
+                let name=document.f1.nm.value;
+
+                
+                if(name=="")
+                {
+                    alert("please Enter your name");
+                    document.f1.nm.focus(); 
+                    
+                   
+
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

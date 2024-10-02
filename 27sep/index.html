@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let myWindow;
+        function myOpen()
+        {
+            myWindow = window.open("about.html","","width=500 , height=300", );
+        }
+        
+    </script>
+</head>
+<body bgcolor="yellow">
+    <!--Browser Object Model(BOM)-->
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">Contact</a>
+    <hr size="4" color="red">
+    <h1>Welcome To Home Page</h1>
+    <button onclick="myOpen()">Open New Window</button>
+    
+</body>
+</html>

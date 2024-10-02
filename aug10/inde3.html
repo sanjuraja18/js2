@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getval(){
+            var stuname = document.f1.nm.value;
+            var city =document.f1.ct.value;
+
+            alert("My name : "+stuname + " City : "+city)
+        }
+
+    </script>
+</head>
+<body bgcolor="pink">
+    <form name="f1">
+        Enter name : <input type="text" name="nm">
+        <br>
+        Enter City : <input type="text" name="ct">
+        <br>
+        <button onclick="getval()">Click here</button>
+    </form>
+    
+</body>
+</html>

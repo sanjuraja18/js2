@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validation()
+        {
+            let name=document.f1.nm.value;
+            let city=document.f1.ct.velue;
+            
+            if(name=="")
+            {
+                alert("enter your name");
+                document.f1.nm.focus();
+                return false;
+            }
+            if(city=="")
+            {
+                alert("enter your city");
+                document.f1.ct.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="yellow">
+    <!--window.location.href-->
+    <h1>Student Form</h1>
+    <!--form method-->
+    <form name="f1" method="post" action="save.html" onsubmit="return validation();">
+        Enter your name <input type="text" name="nm">
+        <br>
+        Enter your city <input type="text" name="ct">
+        <br>
+        <button>Save</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getval()
+        {
+            document.getElementById("demo").innerHTML="<span>How are you</span> people.....!";
+        }
+        function backup()
+        {
+            document.getElementById("cl").bgColor="blue";
+        }
+        function heyBhagawan()
+        {
+            document.getElementById("mg").src="s2.jpeg";
+        }
+        function heyBhagawan1()
+        {
+            document.getElementById("mg").src="s1.jpeg";
+        }
+        function kutumbhakam()
+        {
+            document.getElementById("ct").value="INDIA";
+        }
+    </script>
+    <style>
+        #mg{
+            border-radius: 20px;
+        }
+        span{
+            color: rgb(239, 43, 43);
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            background-color: rgb(228, 107, 42);
+            border: none;
+            border-radius: 30px;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body bgcolor="green" id="cl">
+    <button onclick="getval()">Click here</button>
+    <button onclick="backup()">Click here</button>
+    <h1 id="demo" style="color: aqua;"><span> Good Evening</span> Jhansi.......!</h1>
+    <img src="s1.jpeg" id="mg" width="200px"><br>
+    <button onclick="heyBhagawan()">Click here</button>
+    <button onclick="heyBhagawan1()">Click here</button><br><br>
+    City : <input type="text" value="America" id="ct">
+    <button onclick="kutumbhakam()">Click here</button>
+
+</body>
+</html>

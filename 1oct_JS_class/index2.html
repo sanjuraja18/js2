@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display()
+        {
+            let file ="raj.txt";
+            
+            fetch(file).then((x)=>x.text()).then((y)=>document.getElementById("demo").innerHTML=y);
+            
+        }
+        function display1(){
+            let file2="sanju.txt";
+            fetch(file2).then((x)=>x.text()).then((y)=>document.getElementById("demo2").innerHTML=y);
+        }
+    </script>
+</head>
+<body>
+    <p id="demo">welcome</p>
+    <p id="demo2">Hello bro</p>
+
+    <button onclick="display()">click here</button>
+    <button onclick="display1()">click here</button>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <button id="btn1">Start</button>
+    <button id="btn2">Stop</button>
+    <button id="btn3">Clear</button>
+    <h1 id="ans">00</h1>
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", myStart);
+        document.getElementById("btn2").addEventListener("click", myStop);
+        document.getElementById("btn3").addEventListener("click", myClear);
+
+        var myVal;
+        var myInt;
+
+        function myCount()
+        {
+            myVal = Number(document.getElementById("ans").innerHTML);
+            myVal++;
+            document.getElementById("ans").innerHTML=myVal;
+        }
+
+        function myStart()
+        {
+            myInt = setInterval(myCount, 100)
+        }
+
+        function myStop()
+        {
+            myStart=clearInterval(myInt);
+        }
+
+        function myClear()
+        {
+            document.getElementById("ans").innerHTML=0
+        }
+        
+    </script>
+    </center>
+</body>
+</html>

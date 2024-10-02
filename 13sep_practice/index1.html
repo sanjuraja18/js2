@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            width: 350px;
+            padding: 30px;
+            border: 3px solid lightblue;
+        }
+    </style>
+    <script>
+       var i=1;
+       function addmoreText()
+       {
+        if(i<5){
+            document.write("Add 5 time's is complete!!!");
+        }
+        i++;
+
+        let ct=document.createElement("p");
+        ct.innerHTML=`Enter City: <input type='text'><i class="fa-regular fa-rectangle-xmark" onclick="remove()"</i>>`
+        document.getElementById("demo").appendChild(ct);
+       }
+       function remove(){
+        document.getElementById("demo").removeChild(demo.childNodes[2]);
+       }
+    </script>
+</head>
+<body>
+    <button onclick="addmoreText()">Click here</button>
+    <div id="demo">
+        <p>Enter Subject: <input type="text">
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // using ` ` (backtick)
+        let str =`hello 'sanju' how "are" you`;
+        console.log(str)
+
+        // using multiline (` `)
+
+        let sum = ` hello rb how are you...
+                    we are web doveloper ..
+                    are intrested in this field...`
+                    console.log(sum);
+
+                    // using contatination (+)
+
+                    let name = "sanju ";
+                    let age = " 22 ";
+
+                    let str2 ="hello i am "+name+"i am "+age+"year old";
+                    console.log(str2)
+                    let str3 =`hello i am ${name} i am ${age} year old`;
+                    console.log(str3)
+                    // We can also use expresions inside the ${variable}
+                    let name1 = "rajaji";
+                    let salary = "750000";
+
+                    let str4 =`my name is ${name1} this year tax : ${(salary*0.1).toFixed(3)}`
+                    console.log(str4)
+    </script>
+</body>
+</html>

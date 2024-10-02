@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        
+</head>
+<body>
+    <!--try catch and finally-->
+    <!--Finally block will always executes-->
+    <!--run time error -->
+
+    <input type="text" placeholder="Enter first number" id="demo1">
+    <br><br>
+    <input type="text" placeholder="Enter second number" id="demo2">
+    <br><br>
+    <h1 id="ans"></h1>
+
+    <button onclick="perform()">Click</button>
+
+
+
+    <script>
+        function perform()
+        {
+            let first=document.getElementById("demo1").value;
+            let second=document.getElementById("demo2").value;
+
+            try{
+                if(isNaN(first)||isNaN(second)){
+                    throw " is not a number"
+                }
+                else{
+                    document.getElementById("ans").innerHTML= first+ " / "+ second+ " = " + first/second;
+                }
+            }
+            catch(e){
+                document.getElementById("ans").innerHTML=e;
+            }
+        }
+    </script>
+</body>
+</html>

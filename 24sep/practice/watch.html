@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hero{
+            background-color: yellowgreen;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            
+        }
+        
+        #time{
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            height: 400px;
+            background-color:rgb(221, 235, 35);
+            text-align: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 40px;
+            color:red;
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            box-shadow: 2px 2px 10px 10px salmon;
+            
+        }
+        
+    </style>
+
+</head>
+<body id="hero">
+        <h1 style="position: absolute; left: 38%;  font-size: 50px; top: 10%; color: aqua; text-shadow: 2px 2px rgb(244, 185, 96); ">Digital Watch</h1>
+        <div id="time">
+            
+            <h1 id="demo1">00:</h1>
+            <h1 id="demo2">00:</h1>
+            <h1 id="demo3">00</h1>
+        </div>
+        
+   
+ <script>
+    function myDate()
+        {
+            const d=new Date();
+            //document.getElementById("demo").innerHTML=d;
+           
+            const h=d.getHours();
+            document.getElementById('demo1').innerHTML=h+":";
+            const m=d.getMinutes();
+            document.getElementById('demo2').innerHTML=m+":";
+            const s=d.getSeconds();
+            document.getElementById('demo3').innerHTML=s;
+            
+        }
+        
+        setInterval(myDate, 1000);
+        myDate();
+ </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const age=[22, 33 ,14 ,65 ,21 ,55 ,66 ,77 ,56 ,87 ,56 ,98];
+        const ans=age.filter(function(key){
+            if(key % 2 == 0 ){
+                return true;
+            }
+            else{
+                return false;
+            }
+        })
+         console.log(age);
+        console.log(ans);
+        // by using arrow function
+        const ans1=age.filter((key)=>{
+            if(key % 3==0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        })
+        console.log(ans1);
+
+        const city=["jhansi","indore","talbehat","bhopal","lucknow","riva","kanpur"];
+        const onlythis=city.filter(key =>key =="jhansi" || key == "indore" );
+        console.log(city);
+        console.log(onlythis);
+        
+        //reduce() method
+        const num=[1, 3, 5, 4,];
+        const ans2=num.reduce((result, items)=>{
+            return result + items;
+        }, 12);
+        console.log(num);
+        console.log(ans2);
+
+    </script>
+</body>
+</html>

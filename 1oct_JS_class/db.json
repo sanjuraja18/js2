@@ -1,0 +1,33 @@
+{
+"student":[
+    {
+        "rollno":123,
+        "name":"sanju",
+        "city":"bhopal",
+        "id":101
+    },
+
+    {
+        "rollno":123,
+        "name":"sanju",
+        "city":"bhopal",
+        "id":101
+    },
+
+    {
+        "rollno":123,
+        "name":"sanju",
+        "city":"bhopal",
+        "id":101
+    },
+
+    {
+        "rollno":123,
+        "name":"sanju",
+        "city":"bhopal",
+        "id":101
+    }
+    
+]
+}
+

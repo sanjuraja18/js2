@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const d= new Date();
+        document.write("<h1>",d,"</h1>");
+        const any=d.getDate();
+        document.write("<h1>",any,"</h1>");
+
+        const ans = d.getMinutes();
+        document.write("<h1>",ans,"</h1>")
+
+        const sec = d.getSeconds();
+        document.write("<h1>",sec,"</h1>")
+    
+        const min = d.getMilliseconds();
+        document.write("<h1>",min,"</h1>")
+
+        const day = d.getDay();
+        document.write("<h1>",day,"</h1>")
+
+        const day1=["sunday","monday","tuestdy","wednesday","thursday","friday","saturday"];
+        document.write("<h1> day : ", day1[day]," </h1> ");
+        const time = d.getTime();
+        document.write("<h1>",time,"</h1>")
+
+
+    
+    </script>
+</body>
+</html>

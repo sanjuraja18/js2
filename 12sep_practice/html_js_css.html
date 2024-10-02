@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function display()
+        {
+            let tem=document.getElementById("demo");
+            tem.style.color="red";
+           let h1= tem.innerHTML=`
+                                <h1><span>If talk about my</span> self</h1>
+                                <p>Hello Sir/Ma'am my self sanju chauhan. I beloge to Up Jhansi. but, 
+                                Cunrrently reside at kasturba nagar bhopal.</p><br>
+                                <h1><span> If talk about my</span> Eduaction..</h1>
+                                <p>So currently I'm parsuing fullstack from Cybrom Institude bhopal.
+                                and, I have completed my graduation form Bundelkhand University Jhansi.
+                                and, I have also completed my depaloma from Goverment polytechnic talbehat lalitpur.</p>
+                                <h1><span>If talk about my </span>family...</h1>
+                                <p>There are 6 member in my family included me. My father and mother and three elder siblings.
+                                My father is businessman. He is deal a hardware shope. and, My mother is in goverment servent. She is a ANM.
+                                And, My 2 elder sister and 1 elder brother. and he also parsuing fullstack with me form cybrom institude bhopal.
+                                That's my family background...</p>
+                                <h1><span>And my</span> strengths</h1>  
+                                <h1>my strength are<h1> <br>
+                                <span style="color:green; background-color:orange;"> 1. I'm always excited to learn somthing new.</span><br>
+                                <span style="color:yellow; background-color:black;"> 2.I convence to people esily.</span> <br>
+                                 <span style="color:blue; background-color:lightpink;">3. third is i am also adepatable person</span>
+                                 <h1><span>My weekness</span> is </h1>
+                                 <p>Sometime I start overthinking which is not necesary<br>
+                                 that's my weakness</p>
+                                 <h1><span> and talk about my</span> hobbies</h1>
+                                 <p>1. I like to play cricket<br>
+                                 2. I love touring <br>
+                                 3. I love talk to my self</p>`;
+        
+        }
+    </script>
+    <style>
+        h1{
+            color: rgb(17, 0, 128);
+            text-align: center;
+        }
+        span{
+            color: blueviolet;
+        }
+        p{
+            font-size: 22px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <h3 id="demo">If talk about my Introduction.....!</h3>
+    <button onclick="display()">Click here</button>
+</body>
+</html>

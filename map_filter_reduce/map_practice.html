@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const age=[22, 14, 24, 55, 66, 35, 63, 32, 33, 5, 87];
+        const ans=age.filter(function(key){
+            if(key%2==0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        })
+        console.log(age);
+        console.log(ans);
+        const age2=[1,32,34,23,53,66,42,13,88,87,];
+        const ans2=age2.filter((key)=>{
+            if(key%3==0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        })
+        console.log(age2);
+        console.log(ans2);
+    </script>
+</body>
+</html>

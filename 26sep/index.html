@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--LocalStorage-->
+    <h1 id="demo">My Data</h1>
+    <button onclick="myData()">Click here</button>
+    <button onclick="showData()">Show data</button>
+
+    <script>
+        function myData()
+        {
+            let name="Sanju Chauahan";
+            window.localStorage.setItem("stuname", name)
+        }
+
+        function showData()
+        {
+            let myname=window.localStorage.getItem("stuname");
+            document.getElementById("demo").innerHTML="Hello"+myname;
+        }
+    </script>
+</body>
+</html>

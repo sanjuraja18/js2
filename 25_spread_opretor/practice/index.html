@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a=[2, 4, 3, 5, 2, 3, 7 ];
+        const b=[2, 4, 3, 5, 2, 3, 7 ];
+        const c=[...a, ...b];
+        console.log(c);
+
+        const num=[1, 2, 3, 4, 5, ];
+        const [A, B, C, D, E, ]=num;
+        console.log(A);
+        console.log(B);
+        console.log(C);
+        console.log(D);
+        console.log(E);
+
+        // data...
+       
+        const student={"name":"raja", "rollno":321, "city":"jhansi"};
+        const {name, rollno, city}=student;
+        console.log(name);
+        console.log(rollno);
+        console.log(city);
+
+        const n=[3, 2, 5, 4, 6, 3, 6, 6, 8, ];
+        const [x, y, z, ...all]=n;
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        console.log(all);
+
+        const god ={
+            "apun":"Ramraja",
+            "raja":"Ayodhya",
+            "bhanjan":108
+        }
+
+        const godaital={
+            "lok":"tretayug",
+            "niyay":"kallayan",
+            "ram":"seeta",
+
+        }
+
+        const g={...god, ...godaital}
+        const {apun, raja, bhanjan, ...pujneeye}=g;
+        console.log(g);
+        console.log(apun);
+        console.log(raja);
+        console.log(bhanjan);
+        console.log(pujneeye);
+
+        const name1=["sanju", "rb", "kam", "rahul", "pitaham"];
+        console.log(name1);
+        console.log(...name1);
+        console.log("sanju", "rb", "kam");
+
+        
+
+      
+
+    
+    </script>
+</body>
+</html>
